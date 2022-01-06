@@ -16,13 +16,16 @@ namespace BaseballTweaker_V1
             var batting_stats = Input.RetrieveAllBattingRecords();
             var pitching_stats = Input.RetrieveAllPitchingRecords();
 
-            OutputToConsole.OutputToConsoleAndFileBattingRecords(batting_stats);
-            OutputToConsole.OutputToConsoleAndFilePitchingRecords(pitching_stats);
-            
+            OutputToConsole.CalculateExtraBasesPerAtBat(batting_stats);
+            OutputToConsole.CalculatePointsPerPlateAppearance(batting_stats);
+            OutputToConsole.CalculatetotalPoints(batting_stats);
+            OutputToConsole.CalculatePitchingPointsPerGame(pitching_stats);
+            OutputToConsole.CalculatePitchingTotalPoints(pitching_stats);
 
-         
 
-           //onsole.ReadLine();
+
+
+            //onsole.ReadLine();
         }
 
 
