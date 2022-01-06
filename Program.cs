@@ -10,9 +10,8 @@ namespace BaseballTweaker_V1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Baseball Tweaker in here!");
             
-          //  List<string> names = new List<string>();
             var batting_stats = Input.RetrieveAllBattingRecords();
             var pitching_stats = Input.RetrieveAllPitchingRecords();
 
@@ -25,7 +24,7 @@ namespace BaseballTweaker_V1
 
 
 
-            //onsole.ReadLine();
+            Console.ReadLine();
         }
 
 
